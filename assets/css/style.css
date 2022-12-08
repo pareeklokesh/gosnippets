@@ -157,7 +157,7 @@ body {
   font-size: 14px;
 }*/
 .login-form {
-  transform: translateX(-120%);
+  transform: translateX(140%);
   transition: all .4s linear;
   opacity: 0;
   visibility: hidden;
