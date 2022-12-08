@@ -82,7 +82,7 @@
                             <input type="text" class="form-control" placeholder="Email or Mobile">
                         </div>
                         <div class="form-group">
-                            <button class="btn btn-primary btn-block" id="signup">SIGNUP</button>
+                            <button class="btn btn-primary btn-block" id="signup">JOIN NOW</button>
                         </div>
                     </form>
 
@@ -204,16 +204,19 @@
 	$('#newmember').click(function(){
 		$('.signup-form').addClass('login-form-active');
 		$('.login-form-1').removeClass('login-form-active');
-		$('.header-title').text('SIGNUP')
+        $('.login-form-1').hide();
+		$('.header-title').text("Let's get started")
 	});
 	$('#signup').click(function(){
 		$('.general-form').addClass('login-form-active');
 		$('.signup-form').removeClass('login-form-active');
+        $('.signup-form').hide();
 		$('.header-title').hide();
 	});
 	$('#next').click(function(){
 		$('.general-form').removeClass('login-form-active');
 		$('.contact-details').addClass('login-form-active');
+        $('.general-form').hide();
 		$('.header-title').hide();
 	});
 	$('#newmember').click(function(){
