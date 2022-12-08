@@ -165,7 +165,7 @@ body {
   z-index: -1;
 }
 .login-form-active {
-    transform: translateX(0);
+    transform: translateX(0) !important;
     opacity: 1;
     visibility: visible;
     position: relative;
@@ -204,6 +204,18 @@ body {
 }
 .signup-with-btn svg {
   margin-right: 8px;
+}
+.pervious-btn {
+  background: #f2f2f2 !important;
+  color: #333 !important;
+  border-color: #f2f2f2 !important;
+  box-shadow: none !important;
+}
+.login-form-prev {
+    transform: translateX(-120%);
+}
+.login-form-none {
+    transition: none !important;
 }
 
 
